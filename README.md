@@ -1,4 +1,12 @@
-### Hi there 👋
+Greetings,
+
+This is a repository where I showcase some of the projects I have finished or some that I am currently working on!
+
+My work mostly reflects three areas I'm trying to grow in: Data Science, Web Dev, and Microcontrollers.
+
+I have a portfolio website that I'm hoping to launch sometime soon to better showcase everything, but until then, feel free to browse around my work and reach out with any feedback you might have!
+
+You can reach me at faisaltf@uw.edu
 
 <!--
 **FaisalTF/FaisalTF** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
