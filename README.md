@@ -8,6 +8,10 @@ I have a portfolio website that I'm hoping to launch sometime soon to better sho
 
 You can reach me at faisaltf@uw.edu
 
+Some of my latest snippets:
+[How many misletoes does a sucessful christmas song need?](http://faisaltf.github.io/christmasOccuranceV2.html).
+[An analysis on UW iSchool students and their career plans](http://faisaltf.github.io/poll1Analysis.html).
+[Sympathy for the Devil: Final Project](http://faisaltf.github.io/omarsStory/).
 <!--
 **FaisalTF/FaisalTF** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
