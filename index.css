@@ -62,6 +62,29 @@ h1, h3 {
   margin-right: 0.9vw;
 }
 
+.regLink {
+  float: none !important;
+  color: black !important;
+  margin-left: 4px;
+  margin-right: 0px;
+}
+
+.maintenance {
+  position: absolute;
+  opacity: 0;
+  text-align: center;
+  color: #34c6eb;
+  border-radius: 3px;
+  padding-top: 13vw;
+  height: 8vw;
+  width: 15vw;
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.maintenance:hover {
+  opacity: 1;
+}
+
 .misc {
   float: right;
   width: 15vw;
