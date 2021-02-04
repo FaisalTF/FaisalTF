@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="index.css">
+    <title>FaisalTF</title>
+    <script>
+
+      window.addEventListener("load", init);
+      function init() {
+        projects = document.querySelectorAll(".project");
+        for(let i = 0; i < projects.length; i++) {
+          projects[i].addEventListener("mouseover", function() {toggleProjView(projects[i]);} );
+          projects[i].addEventListener("mouseout", function() {toggleProjView(projects[i]);} )
+        }
+      }
+
+      function toggleProjView(project) {
+        toggleView(project.querySelector(".projInfo"));
+        toggleView(project.querySelector(".more"));
+      }
+
+      function toggleView(element) {
+        element.classList.toggle("invisible")
+      }
+    </script>
+  </head>
+  <body>
+    <div class="mainContainer">
+      <h1>Faisal Fattani</h1>
+      <hr>
+      <p>Greetings!<br><br>I'm a Junior undergraduate at the University of Washington who's invigorated by data-driven problem solving. I'm currently a data analyst intern at MedTourEasy and part of the Polling and Open Data Initiative at UW (POD UW).
+         <br><br>This repository showcases some projects and snippets that I worked
+        on, or that I'm currently working on.<br><br>I'm trying to grow as a data scientist, so my work is mostly centered around data
+        analytics but I also love playing
+        with microcontrollers and web development occasionally.<br><br>Please feel free to reach out with any
+      feedback you might have at faisaltf@uw.edu.</p><br>
+      <h3>Here's a snippet from my latest work <span id="learnMore"><a href="">learn more</a></span></h3>
+      <div class="flourish-embed" data-src="story/738011"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+      <hr>
+      <div class="misc">
+        <h3>Misc</h3>
+        <h4>Peoniegram</h4>
+        <h4>Arduino Frame</h4>
+        <h4>RaspberryPi Arcade</h4>
+      </div>
+      <section class="projContainer">
+        <h3>Some of my works</h3>
+        <div class="project">
+          <h4>Analysis for POD UW's Internships Report</h4>
+          <div class="projInfo invisible">
+            <p>Cleaned and visualized survey results to find trends and correlations about student internship applications and offers<br><br>
+            The full report was sent by the university to the entire student body of the Paul Allen School of Computer Science</p>
+          <a href="#">Full Report</a>
+          <a href="#">Analysis</a>
+          </div>
+        <div class="more">...</div>
+        </div>
+          <div class="project">
+            <h4>How Many Misteltoes Does Christmas Need?</h4>
+            <div class="projInfo invisible">
+              <p>A quantitaive look at Christmas song lyrics comparing Christmas word occurances against non-Christmas lyric</p>
+              <a href="#">Published Article</a>
+            <a href="#">Code</a>
+            </div>
+          <div class="more">...</div>
+          </div>
+            <div class="project">
+              <h4>iSchool Survey Analysis</h4>
+              <div class="projInfo invisible">
+                <p>POD UW surveyed students at the iSchool to <bold>share</bold> about current tracks, future plans, and more. <br> <br>
+                I cleaned, processed, and visualized some of the data to <bold> break down </bold> student future plans and how that relates to their current tracks</p>
+              <a href="#">Published Article</a>
+              <a href="#">Analysis</a>
+              </div>
+            <div class="more">...</div>
+            </div>
+        <div class="project">
+          <h4>How Small Can Smallball Go?</h4>
+          <div class="projInfo invisible">
+            <p>Using machine learning to test how different
+            strategies affect team performances if taken to the exteremes, extrapolating the Houston Rocket's
+          data-driven "small ball" system.</p>
+          <a href="#">Link/Code</a>
+          <a href="#">Reddit</a>
+          </div>
+          <div class="more">...</div>
+        </div>
+        <div class="project">
+          <h4>Sympahty for the Devil Project</h4>
+          <div class="projInfo invisible">
+            <p>An interactive storyline game where users end up in different scenarios based on decisions they made along a journey.</p>
+          <a href="#">Code</a>
+          <a target="_blank" href="http://FaisalTF.github.io/projectOMAR/">Link</a>
+          </div>
+          <div class="more">...</div>
+        </div>
+        <div class="project">
+          <h4>Monte Hall Problem</h4>
+          <div class="projInfo invisible">
+            <p>The Monte Hall Problem sounded a bit off at first (didn't realize the problem
+            said other doors) and wrote some javascript to see it in action. I decided to visulaize
+          the code since I alreayd wrote it to work on my visualization skills and help</p>
+          <a href="#">Link</a>
+          </div>
+          <div class="more">...</div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
