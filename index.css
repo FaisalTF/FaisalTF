@@ -13,6 +13,18 @@ h1, h3 {
   color: #34c6eb;
 }
 
+#linkedin {
+  width: 2vw;
+  position: absolute;
+  margin-left: 58vw;
+  margin-top: -9vh;
+}
+
+#hello a{
+  color: #888;
+  text-decoration: none;
+}
+
 #learnMore a{
   color: #888;
   text-decoration: none;
