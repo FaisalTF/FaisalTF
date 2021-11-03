@@ -1,4 +1,5 @@
 Greetings,
 
-This is a repository where I showcase some of the projects I have finished or some that I am currently working on!
-### Please visit its index page to view my portfolio [here](https://faisaltf.github.io/)
+This is a portfolio repository where I showcase some of my previous and ongoing work!
+
+### Please visit the following page to view my portfolio [here](https://faisaltf.github.io/)
