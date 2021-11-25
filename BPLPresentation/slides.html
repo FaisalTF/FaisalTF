@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>PODUW</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section><h4 style='margin-top: 10%;'>Data-driven insights to help taylor program opportunities.</h4><img src="imblaze.png" alt="" style='height:25vh;'> <img src='poduw.png' style='height:17vh;'></section>
+				<section>
+						<section><h2>Introduction</h2></section>
+						<section>
+							This analysis [GOAL] with the hopes of accomplishing the following:
+							<ul style='font-size: 80%;	'> <br>
+								<li>To help the ImBlaze team maintain and adapt the platform to student needs.</li> <br>
+								<li>More broadly, to get a glimpse of student experience sand interest towards future steps at the high school level.</li>
+							</ul>
+						</section>
+						<section>
+							<h5>About the Polling and Open Data Initative:</h5> <br>
+							The Polling and Open Data Initative at UW (PODUW) is a student organization that creates, analyzes, and presents data to catalyze social impact and support its communities, while helping students gain real-world experience. </li>
+						</section>
+						<section>
+							<h3>Disclaimer Caveats:</h3>
+							<ul>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+						</section>
+				</section>
+				<section>
+				<section><h2>The Program's Landscape</h2><hr style='width: 30%;'><p style='font-size:70%;'>An overview of current and previous trends in internship availabilities and demands, fields and industries, demographics, and more. </p></section>
+					<section><h4>Student Activity</h4> <div style='margin-top: 70px'> <img src="studentActivity.png" alt="" style='height:50vh; '> <p style='font-size: 30%; text-align: left; color:grey'>The previous chart visualizes student log counts per month. Annual trends in student activity seem to peak during the second half of the year, potentially relevant to summertime and school vacations.
+						The COVID-19 pandemic is also notably represented by the drop off during the early months of 2020. The number of logs drops from approximately 17,500 in February 2020 to around 250 logs in March 2020 which precisely aligns with the start of the pandemic in the United States. However, while health protocols and measures from the pandemic were still enforced during the following year (2021), activity seemed to have risen back surpassing 2019 numbers. </p></div> </section>
+					<section>
+						<h4>Internship Request and Demand</h4> <br>
+						<div class='single'> <img src="studentCounts.png" alt=""> <p><b>Student internship requests peaked in 2019 then fell during the pandemic.</b>
+
+Internship requests from students grew more than three-fold from 2017 to 2019 but fell in 2020 as the COVID-19 pandemic took hold. Requests in the first half of 2021 are returning to pre-pandemic levels, suggesting that the effect is transitory. </p> </div>
+						<div class='single'> <p><b>Fewer students are requesting internships for each opening.</b><br>
+The request density (the average number of internship requests for each internship opening) fell from 2.3 in 2017 to 1.6 in 2020. </p> <img src="requestsDensity.png" alt="" style='background-color: white;'> </div>
+						<style media="screen">
+							.single {
+								height: 30vh;
+								display: flex;
+								flex-direction: row;
+								align-items: center;
+								justify-content: space-between;
+							}
+
+							.single p {
+								font-size: 50%;
+								text-align: left;
+								margin-left: 40px;
+								color: #ccc
+							}
+
+							.single p b {
+								color: white
+							}
+
+						</style>
+					</section>
+				</section>
+				<section>
+					<section><h2>The Student Experience</h2><hr style='width: 30%;'><p style='font-size:70%;'>An overview of current and previous trends in internship availability and demand, fields and industries, demographics, and more. </p></section>
+					<section>
+						<h6 style='font-size: 80%'>Which Factors Motivate Internship Applicants in ImBlaze? </h6>
+						<p style='font-size: 55%; text-align: left; color: #ccc'>This subsection explores student application comments inside the ImBlaze app to better understand the motivations of students seeking internships. This analysis points to three key topics of interest and popular fields, which can help ImBlaze better identify opportunities and design experiences tailored to its users’ interests. <br> <br> <b style='font-size: 125%; color:white'>Topic Clustering</b>, a Natural Language Processing (NLP) technique, was used to distinguish student applications and identify topic groups. The Latent Dirichlet allocation (LDA) model, more specifically, identified the following topics based on keyword relevance. Larger keywords are identified as being more commonly associated with the topic.  </p>
+					</section>
+					<section>
+						<div class="quadContainer">
+							<div class="quadSingle"> <img src="slideImages/topic1.png" alt=""> <p>  <b style='color:white'> Interest in specific disciplines/fields of work: </b> One of the most common keywords students used was passion, which was closely associated with field and discipline-specific keywords, like medical, cars, or design. Interest in the medical, automotive, and art/design industries were particularly common.</p> </div>
+							<div class="quadSingle"> <img src="slideImages/topic2.png" alt=""> <p><b>Career Preparation: </b> On the other hand, other applicants were more interested in gaining general work and internship experience, rather than exploring a passion in a specific field. These responses focused on areas like interview(s) and career(s).</p> </div>
+							<div class="quadSingle"> <p> <b>Finding interesting experiences:</b> The third cluster of responses is interpreted to be more experience-driven and exploratory. These responses shared motivations towards cool or interesting experiences, with a focus on interesting learning experiences.</p> <img src="slideImages/topic3.png" alt=""> </div>
+							<div class="quadSingle"> <p> <b>Other key topics: </b>The model also identified a fourth cluster. Lacking strong definitive keywords, it identifies other common themes less related to the previous three topics. Notable motivations include helping children and shadow(ing) opportunities </p> <img src="slideImages/topic4.png" alt=""> </div>
+							<style media="screen">
+								.quadContainer {
+									display: flex;
+									height: 80vh;
+									width: 70vw;
+									flex-wrap: wrap;
+									justify-content: space-around;
+								}
+								.quadSingle {
+									display: flex;
+									flex-direction: row;
+									width: 48%;
+									height: 50%;
+									justify-content: center;
+									align-items: center;
+								}
+
+								.quadSingle p {
+										margin: 20px;
+
+										text-align: left;
+										font-size: 25%;
+										color: #ccc;
+								}
+
+								.quadSingle b {
+									color: white;
+									font-size: 125%
+								}
+
+								.quadSingle img {
+									height: 70%;
+								}
+							</style>
+						</div>
+					</section>
+			</section>
+			<section><h3 style=''>Potential next steps to utilize this</h3></section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
