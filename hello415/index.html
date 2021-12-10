@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Presentation</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<section><h1>Faisal Fattani<h1> <h6>Deepfake-Phishing</h6></section>
+				</section>
+				<section>
+					<section>
+						<h2>About</h2>
+					</section>
+					<section>
+						<h4>Dumbfounded to learn about how prominent spam and phishing are, and that 'yahoo boys' are still successful.</h4>
+					</section>
+					<section>
+						<h6 >How many levels would it take for me to become susceptible?</h6> <br>
+							<ul>
+								<li>"Come on that's obviously not a real Nigerian Prince behind that email..."</li>
+								<li>"Come on that Nigerian Prince is definitely trying to scam me."</li>
+								<li>"Come on Nigerian Prince, you are not my friend and you can't pretend to be"</li>
+								<li>"Come on ..friend? my uhmm social security number?"</li>
+							</ul>
+							<style media="screen">
+								li {
+									margin-top: 25px;
+									font-size: 80%;
+								}
+							</style>
+					</section>
+					<section>
+						<a href="https://twitter.com/etienneshrdlu/status/1303459289164644352">Highest Level?</a>
+					</section>
+					<section>
+						<h3>Can deepfakes be used as a cyber-attack tool in spearphishing?</h3>
+						<p style='font-size: 35%; margin-top: 10vh'>Fishing vs Spearfishing; Phishing vs Spearphishing</p>
+					</section>
+					<section>
+						<h4>The Plan<h4>
+						<ul>
+							<li><p><em class='red'>Step 1:</em> Generate Deepfakes of myself</p>
+							<li><p><em class='red'>Step 2:</em> Share fake recordings with friends through snapchat, stories, and more.</p></li>
+							<li><p><em class='red'>Step 3:</em> Observe reactions, deepfakes called out? 'success'?</p></li>
+						</ul>
+					</section>
+					<section>
+						<p>Different statke-levels to test:</p>
+						<ul>
+							<li>Low: can a deepfake simply 'pass by'.</li>
+							<li>Medium: can I 'pass by' a deepfake as myself to start a conversation.</li>
+							<li>High: can I get credentials using a deepfake.</li>
+						</ul>
+					</section>
+					<section>
+							<h6>Plan designed to test the main question rather than as a cyber-attack method.</li>
+					</section>
+				</section>
+				<section>
+					<section>
+					<h6>Under the fake hood</h6> <br>
+					<ul style='font-size: 60%'> Simple Deepfake workflow (DeepFaceLab Package):
+						<li>Compile sources: of both 'source' and 'destination' faces for the model to be trained on.</li>
+						<li>Extract still frames from videos.</li>
+						<li>ML model 1: extracts faces from frames and orients them for following models.</li>
+						<li>ML model 2: masks the 'face' area.</li>
+						<li>ML: model 3: train to mash source face into destination.</li>
+						<li>Merge back frames with new fake faces.</li>
+					</ul>
+				</section>
+			</section>
+				<section>
+					<section>
+						<h2>Plan in Action</h2>
+					</section>
+					<section>
+						<h6>Generating deepfakes is rather costly</h6> <br>
+						<img src="pikatchu.png" style='height: 40vh'alt="">
+					</section>
+					<section>
+						<h4>Compiling Sources</h4> <p style='font-size: 40%'> if only the rest of the process was as easy... </p>
+					</section>
+
+					<section>
+						<h6>First results as I finally got set up on AWS:</h6>
+						<img src="potato.png" alt="" style='height: 70vh'>
+					</section>
+					<section>
+						<h6>Realized I can use pretrained models! <br> <br> <a>first fabricated deepfake</a> </h6>
+					</section>
+					<section>
+						<h6>Back to the plan:</h6>
+						<img src="tatumFattani.png" alt="">
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Production and Reactions</h2>
+					</section>
+					<section>
+						<h3> <a href="sl1.mp4">Stake-Level 1</a></h3>
+					</section>
+					<section>
+						<img src="results1.png" style='height: 80vh' alt="">
+					</section>
+					<section>
+						<h3> <a href="sl2.mp4">Stake-Level 2 (1.5?)</a></h3>
+					</section>
+					<section>
+						<img src="results2.png" style='height: 80vh' alt="">
+					</section>
+					<section>
+						<h4> <a href="sl3.mp4">Stake-Level 3</a></h4>
+						<ul>
+							<li>Sent to 13 people.</li>
+							<li>6(!) replied that they don't know any passwords.</li>
+							<li>4 laughed along.</li>
+							<li>1 reached out about me being hacked?</li>
+						</ul>
+					</section>
+					<section>
+						<img src="comment.jpg" alt="">
+						<img src="comment2.jpg" alt="">
+						<img src="comment3.png" alt="">
+					</section>
+					<section>
+						<img src="noah.png" alt="">
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>Reflecting back</h3> <br>
+						<p style='font-size: 79%; text-align:left;'>Even though cases that had any remote 'sucess' were rare, I think my overall answer is closer to yes than no considering the situation and its scale. <br> <br> Deepfake qualitiy seemed to be the tool's weakest point and cybercrime groups can probably produce much higher quality deepfakes without getting quite as worried about their card rejecting AWS charges.</p>
+
+					</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
