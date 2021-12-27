@@ -1,0 +1,477 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>PODUW</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section><h4 style='margin-top: 10%;'>Data-driven insights to help taylor program opportunities.</h4><img src="imblaze.png" alt="" style='height:25vh;'> <img src='poduw.png' style='height:17vh;'></section>
+				<section>
+						<section><h2>Introduction</h2></section>
+						<section>
+							<p style='font-size: 75%; text-align: left'>This analysis explores trends throughout the programs provided within the ImBlaze platform, the benefeciary students and their experience, partner schools and mentors, and the industries these opportunities are happening within, with the hopes of accomplishing the following:
+							<ul style='font-size: 60%;	'> <br>
+								<li>To help the ImBlaze team maintain and adapt the platform to student needs.</li> <br>
+								<li>More broadly, to understand student experiences and interests towards next steps at the high school level.</li>
+							</ul>
+						</section>
+						<section>
+							<h3>Disclaimer Caveats:</h3>
+							<ul style='font-size:45%'> <p >Along with the insights brought up throughout this analysis, the following points need to be taken into account:</p>
+								<li>This analysis explores data from within a specific time-window,<sup>*</sup> a window that may have been influenced by driving factors (seasonal, educational, that may prevent extrapolating these temporal trends linearly or otherwise constantly.</li> <br>
+								<li>Trends relating to opportunity fields and industries all directly rely on ImBlaze's expansion history and patterns, which occour irregularly across different fields - program addition frequently occours through staff and student connections, which may be skewed throughout the different schools. </li> <br>
+								<li></li>
+								<br>
+								<sup>*</sup>More in following slide.
+							</ul>
+						</section>
+						<section>
+							<h3>ImBlaze Data</h3>
+							<ul style='font-size:55%'><p style='font-size:115%'>The following data sources where directly acquired and analyzed from ImBlaze, spanning through the time period between [1/1/2018] and [9/9/2020]. </p>
+								<b>- Daily Student Logs</b> <br>
+								<b>- Inernship Request (By Student)</b> <br>
+								<b>- New opportunity Suggestion </b> <br>
+								<b>- Partner-Schools</b>
+							</ul>
+						</section>
+						<section>
+							<h5>About the Polling and Open Data Initative:</h5> <br>
+							<p style='font-size:70%; text-align: left'>The Polling and Open Data Initative at UW (PODUW) is a student organization that creates, analyzes, and presents data to catalyze social impact and support its communities, while helping students gain real-world experience.  </p>
+							<br> Visit our website at <a href="poddata.org">poddata.org</a> to learn more!
+						</section>
+				</section>
+				<section>
+				<section><h2>The Program's Landscape</h2><hr style='width: 30%;'><p style='font-size:70%;'>An overview of current and previous trends in internship availabilities and demands, fields and industries, demographics, and more. </p></section>
+					<section class='single'>
+						<h4>Student Activity</h4>
+						<div>
+							<img src="figures/studentActivity.png" alt="" >
+							<p class='subtext'>The previous chart visualizes student log counts per month. Annual trends in student activity seem to peak during the second half of the year, potentially relevant to summertime and school vacations.
+						The COVID-19 pandemic is also notably represented by the drop off during the early months of 2020. The number of logs drops from approximately 17,500 in February 2020 to around 250 logs in March 2020 which precisely aligns with the start of the pandemic in the United States. However, while health protocols and measures from the pandemic were still enforced during the following year (2021), activity seemed to have risen back surpassing 2019 numbers. </p>
+					</div>
+
+					<style media="screen">
+						.single div {
+							margin-top: 1vh;
+						}
+
+						.single div img {
+							height:55vh;
+						}
+
+						.single div p {
+							font-size: 50%;
+							text-align: left;
+							color:grey;
+						}
+
+						.subtext {
+							font-size: 30% !important;
+						}
+
+						b {
+							color:white;
+						}
+
+						h1, h2, h3, h4, h5, h6 {
+							text-shadow: 2px 2px grey !important
+						}
+
+					</style>
+
+				</section>
+					<section>
+						<h4>Internship Request and Demand</h4> <br>
+						<div class='double'> <img src="figures/studentCounts5.png" alt=""> <p><b>Student internship requests peaked in 2019 then fell during the pandemic.</b>
+							Internship requests from students grew more than three-fold from 2017 to 2019 but fell in 2020 as the COVID-19 pandemic took hold. Requests in the first half of 2021 are returning to pre-pandemic levels, suggesting that the effect is transitory. </p> </div>
+						<div class='double'> <p><b>Fewer students are requesting internships for each opening.</b><br>
+							The request density (the average number of internship requests for each internship opening) fell from 2.3 in 2017 to 1.6 in 2020. </p> <img src="figures/requestsDensity.png" alt=""> </div>
+
+					</section>
+					<style media="screen">
+						.double {
+							height: 30vh;
+							display: flex;
+							flex-direction: row;
+							align-items: center;
+							justify-content: space-between;
+						}
+
+						.double p, .doubleMini p {
+							font-size: 50%;
+							text-align: left;
+							margin-left: 40px;
+							color: #ccc
+						}
+
+						.double p b, .doubleMini p b {
+							color: white
+						}
+
+						.doubleMini {
+							height: 25vh;
+							display: flex;
+							flex-direction: row;
+							align-items: center;
+							justify-content: space-between;
+						}
+
+					</style>
+					<section class='single'>
+						<h4>Industries and Professions</h4>
+						<div>
+							<img src="figures/fieldProgress.png">
+							<p class='subtext'>  <b>The education, healthcare, and animal care industries have consistently provided the most internship opportunities.</b> <br>In every year from 2017 to 2020, these three industries opened the most internship opportunities on the ImBlaze platform. Virtually all industries provided fewer opportunities in 2020 than in 2019, but the drop was especially sharp for Education – as widespread school closures may suggest. The number of healthcare opportunities decreased less than most other categories.</p>
+						</div>
+
+					</section>
+
+					<section class='single'>
+						<h4>Least Met Industries</h4>
+						<div>
+							<img src="figures/leastIndustries.png" alt="" style=''>
+							<p>
+								<b>Student interest in internships is less met in animal care, museum/library, and music professions. <br> </b>
+								The ratio of applicants to open internship opportunities was highest for the above industries (top 5).
+							</p>
+						</div>
+					</section>
+
+					<section> <!-- Section Template -->
+						<h4>Sought-After Industries</h4>
+						<div class="">
+							<table style='font-size: 50%' class='packedTable'>
+								<tr>
+									<th>2017</th>
+									<th>2018</th>
+									<th>2019</th>
+									<th>2020</th>
+									<th>2021</th>
+									<th>Total</th>
+								</tr>
+								<tr>
+									<th>Animal Care 269 <br> (19.33%)</th>
+									<th>Healthcare 711 <br> (17.86%)</th>
+									<th>Healthcare 930 <br>(36.24%) </th>
+									<th>Healthcare 356 <br>(12.64%) </th>
+									<th>Healthcare 331 <br> (1.81%) </th>
+									<th>Healthcare 2559 <br> (21.61%)</th>
+								</tr>
+								<tr>
+									<th>Healthcare 216 <br> (14.81%) </th>
+									<th>Education 558 <br> (11.83%) </th>
+									<th>Animal Care 757 <br> (10.57%) </th>
+									<th>Animal Care 307 <br> (14.66%) </th>
+									<th>Education 259 <br> (7.34%)</th>
+									<th>Animal Care 2030 <br> (12.17%) </th>
+								</tr>
+								<tr>
+									<th>Education  168  <br> (10.12%) </th>
+									<th>Animal Care 489  <br> (11.04%) </th>
+									<th>Education 646  <br> (8.82%) </th>
+									<th>Education 302 <br> (3.97%) </th>
+									<th>Business  248 <br> (11.69%)</th>
+									<th>Education 1941  <br> (8.81%) </th>
+								</tr>
+								<tr>
+									<th>Retaul 124   <br> (9.68%) </th>
+									<th>Culinary  390 <br> (13.33%) </th>
+									<th>Culinary  481 <br> (13.1%) </th>
+									<th>Retail 182 <br> (6.04%) </th>
+									<th>Animal Care  171 <br> (3.51%)</th>
+									<th>Culinary 1269<br> (11.51%) </th>
+								</tr>
+								<tr>
+									<th>Culinary  118 <br> (12.71%) </th>
+									<th>Technology 385 <br> (35.32%) </th>
+									<th>Retail 350 <br> (6%) </th>
+									<th>Culinary 171<br> (7.34%) </th>
+									<th>Arts 135<br> (2.96%) </th>
+									<th>Technology 1027 <br> (24.44%) </th>
+								</tr>
+							</table>
+						</div>
+					</section>
+
+					<section>
+						<h6 style='font-size: 80%'>Student Demographics </h6> <br>
+						<p style='font-size: 55%; text-align: left; color: #ccc'>Demographic data regarding ImBlaze partner-schools were scraped from external sources; racial distributions and socio-economnic metrics were sourced from <a href="#">US News</a> and <a href="#">the National Center for Education Statistics</a>. This section analyzes demographic trends and disparities at the school-level across ImBlaze.  <br> <br>
+						<b style='color:white'>Free or Reduced Lunch</b>: Used as a socio-economic measure, this section considers the rate of students in a school qualifying within their respective state's threshold for free or reduced lunch to draw distinction between partner-school socioeconomic demographics.</p>	</section>
+
+
+					<section >
+						<h4>Racial Distribution</h4>
+						<div class="singleRow">
+							<img src="figures/racePie.png" alt="" style='height: 60vh; margin-top: 7vh'>
+							<p class='subtext' style='margin-top: 25vh; text-align: left;'> <b></b> This chart visualizes the racial distribution among partner schools, where each school’s respective distribution was weighted by its total number of students. Students of Hispanic background are most prominent at 42% followed by White at 38%, with Black and Asian trailing behind at 17.5% and 2.5% respectively.  </p>
+						</div>
+					</section>
+
+
+					<section class='single'>
+						<h4>Free/Reduced Lunch Distribution</h4>
+							<div class="">
+
+							<img src="figures/lunchDist.png" alt="" style='height: 40vh'>
+							<img src="figures/anson1.png" alt="" style='height: 40vh;'>
+							<p> <b>Number of students peaked around two cluseters when looking at partner-school reduced lunch rates.</b> <br> The first cluster, on the higher end, had most students present in schools that had between 60-90% of their students eligible for reduced lunch rates. The second cluster, on the lower end, had sudents present in schools that have 0-30% of students eligible for reduced lunch rates.  </p>
+						</div>
+					</section>
+
+					<section>
+
+						<style media="screen">
+							#lilGuide {
+								position: absolute;
+								font-size: 30%;
+								top: 20vh;
+								left: 60vw;
+								width: 15vw;
+							}
+
+						</style>
+
+				<div class="flourish-embed flourish-map" data-src="visualisation/7809786" data-height="80vh"><script src="https://public.flourish.studio/resources/embed.js"></script></div>					</section>
+
+
+
+					<section class='single'>
+						<h4>Accessibility and Free/Reduced Lunch</h4>
+						<div class="">
+							<img src="figures/lunchScatter.png" alt="" style='height: 40vh'> <img src="figures/frAvail2.png" alt="" style='height: 40vh; border-left:1px solid grey; padding-left: 1vw'>
+							<p> Comparing Free/Reduced Lunch Rates with Accepted Suggestions (Left) as well as Internship (Un)Availabilities (Right) failed to show any trends, which may suggest socioconomic effects on internship availabilities and suggestions.</p>
+							<p class='subtext'>r^2: the coeffecient of determination - a metric measuring variable variance explainability.</p>
+						</div>
+					</section>
+
+					<section class='single'> <!-- Section Template -->
+						<h4>Unavailable Fields Based on F/R Lunch Rates</h4>  <p class='subtext' style='text-align: left; margin-left: 2.4vw'>Below were the top 5 unavailable fields for F/R Lunch rates at 20% intervals.</p>
+						<div class="">
+							<img src="figures/Prof-freeReducedBucket (1).png" alt="" style='height: 50vh'>
+							<p> <b>Education, healthcare, and animal care were unavailable across most F/R Lunch rates.</b> <br> Notable disparities included the Technology field being unavailable for schools between 0% - 20% F/R Lunch Rates, and Activism and Advocacy being unavailable for schools between 80% - 100% F/R Lunch Rates.</p>
+						</div>
+					</section>
+
+
+					<section class='single'> <!-- Section Template -->
+						<div class="">
+							<img src="figures/upper50skew.png" alt="" style='height: 65vh'>
+							<p> <b></b> </p>
+						</div>
+					</section>
+
+
+					<section class='single'> <!-- Section Template -->
+						<div class="">
+							<img src="figures/lower50skew.png" alt="" style='height: 65vh'>
+							<p> <b></b> </p>
+						</div>
+					</section>
+
+				</section>
+				<section>
+					<section><h2>The Student Experience</h2><hr style='width: 30%;'><p style='font-size:70%;'>An overview of current and previous trends in internship availability and demand, fields and industries, demographics, and more. </p></section>
+					<section>
+						<h6 style='font-size: 80%'>Which Factors Motivate Internship Applicants in ImBlaze? </h6>
+						<p style='font-size: 55%; text-align: left; color: #ccc'>This subsection explores student application comments inside the ImBlaze app to better understand the motivations of students seeking internships. This analysis points to three key topics of interest and popular fields, which can help ImBlaze better identify opportunities and design experiences tailored to its users’ interests. <br> <br> <b style='font-size: 125%; color:white'>Topic Clustering</b>, a Natural Language Processing (NLP) technique, was used to distinguish student applications and identify topic groups. The Latent Dirichlet allocation (LDA) model, more specifically, identified the following topics based on keyword relevance. Larger keywords are identified as being more commonly associated with the topic.  </p>
+					</section>
+					<section>
+						<div class="quadContainer">
+							<div class="quadSingle"> <img src="slideImages/topic1.png" alt=""> <p>  <b style='color:white'> Interest in specific disciplines/fields of work: </b> One of the most common keywords students used was passion, which was closely associated with field and discipline-specific keywords, like medical, cars, or design. Interest in the medical, automotive, and art/design industries were particularly common.</p> </div>
+							<div class="quadSingle"> <img src="slideImages/topic2.png" alt=""> <p><b>Career Preparation: </b> On the other hand, other applicants were more interested in gaining general work and internship experience, rather than exploring a passion in a specific field. These responses focused on areas like interview(s) and career(s).</p> </div>
+							<div class="quadSingle"> <p> <b>Finding interesting experiences:</b> The third cluster of responses is interpreted to be more experience-driven and exploratory. These responses shared motivations towards cool or interesting experiences, with a focus on interesting learning experiences.</p> <img src="slideImages/topic3.png" alt=""> </div>
+							<div class="quadSingle"> <p> <b>Other key topics: </b>The model also identified a fourth cluster. Lacking strong definitive keywords, it identifies other common themes less related to the previous three topics. Notable motivations include helping children and shadow(ing) opportunities </p> <img src="slideImages/topic4.png" alt=""> </div>
+							<style media="screen">
+
+								.quadContainer {
+									display: flex;
+									height: 80vh;
+									width: 70vw;
+									flex-wrap: wrap;
+									justify-content: space-around;
+								}
+								.quadSingle {
+									display: flex;
+									flex-direction: row;
+									width: 48%;
+									height: 50%;
+									justify-content: center;
+									align-items: center;
+								}
+
+								.quadSingle p {
+										margin: 20px;
+										text-align: left;
+										font-size: 25%;
+										color: grey;
+								}
+
+								.quadSingle b {
+									color: white;
+									font-size: 125%
+								}
+
+								.quadSingle img {
+									height: 70%;
+									border: 3px solid #444;
+								}
+
+								a:link {
+									color: white;
+									font-weight: bold;
+								}
+
+							</style>
+						</div>
+					</section>
+
+					<section class='single'> <!-- Section Template -->
+						<h4>Student Suggestions - Overview</h4>
+						<div class="">
+							<img src="figures/Timelines-Suggestion.png" alt="" style='height: 50vh'>
+							<p class='subtext'><b>In contrast to activity peaking during the end of the academic year in the summer, suggestions peak following the summer at the start of the academic year.</b>
+							September marks the annual peak in suggestion volume, rising from around 500 suggestions in 2017, to more than 1400 suggestions in September of 2019. A drop-off likely due to the COVID-19 pandmic is yet again present in suggestion trends in 2020.</p>
+						</div>
+					</section>
+
+					<section class='single'> <!-- Section Template -->
+						<h4>Student Suggestions - Motivations</h4>
+						<div class="singleRow">
+							<img src="figures/Student-Suggestion-Cloud.png" alt="" style='height: 50vh; border: 5px solid #444;'>
+							<p class='subtext'>Comments accompanying suggestions were analyzed, similar to those accompanying applications in the previous section, with the highlighted keywords helping identify themes and motives behind suggestions. <br> <br> Similar themes are present, such as exploring personal passions (keywords <i>photography; music</i>), as well as career development (keywords <i>future; experience</i>). </p>
+						</div>
+					</section>
+
+					<style media="screen">
+						.singleRow {
+							display: flex;
+							flex-direction: row;
+							justify-content: space-around;
+						}
+
+						.singleRow p {
+							width: 30vw;
+							margin-top: 10vh;
+							font-size: 120%;
+						}
+
+						tr {
+							border: none;
+						}
+
+
+						tr:nth-of-type(1) {
+							background-color: rgba(222,222,222,0.08);
+						}
+					</style>
+
+					<section>
+						<h6 style='font-size: 80%'>Analyzing Student Sentiments</h6>
+						<p style='font-size: 55%; text-align: left; color: #ccc'> <b>Sentiment Analysis: </b>To dive deeper into understanding the student experience, another Natural Langauge Processing (NLP) technique was preformed. Sentiment Analysis utilizes machine learning to try to extract emotions and attitudes from a given piece of text, and ranks its sentiment from most positive, to most negative.
+						<br> <br> In this analysis, sentiment analysis was performed,<sup>*</sup> ranking each student log entry with a sentiment score ranging from <em style='color:green'>1</em> (most positive), to <em style='color:red'>-1</em> (most negative); with 0 representing neutral sentiment according to the model.
+						<br> <br> An additional measurment was calculated, <b>Sentiment Difference</b>, which is simply the difference between a student's sentiment scores during their check-in and check-out comments. Iedally, this would capture a student's setniment towards how they felt about their day.</p>
+						<p class='subtext' style='text-align: left;'><sup>*</sup>Technical methodology available in appendix.</p>
+					</section>
+
+					<section class='single'> <!-- Section Template -->
+						<div class="">
+							<table>
+								<tr>
+									<th>Log</th> <th>Goals</th> <th>Accomplishements</th> <th>Sentiment Difference </th>
+								</tr>
+								<tr>
+									<th>12355</th> <th>"To have fun and gain experiences"</th> <th>"I dont know if i learned anything i did cry so thats something"</th> <th> <em style='color: red'> - 0.655 </em></th>
+								</tr>
+								<tr>
+									<th>55261</th><th>"not have a headache"</th><th>"Today was super easy and overall a great day, i was more communicative with our patients that we DID have and felt like i was more help than yesterday"</th><th> <em style='color: green'>0.668</em></th>
+								</tr>
+								<tr>
+									<th>49422</th><th>"To finish up my office project"</th><th>"I'm almost done with my office project"</th><th>0.006</th>
+								</tr>
+							</table>
+						</div>
+					</section>
+
+					<style media="screen">
+						table {
+							font-size: 50%;
+						}
+					</style>
+
+					<section> <!-- Section Template -->
+						<h4>Sentiment Analysis</h4>
+						<div class="double" style='height: 35vh'>
+							<img src="figures/mentorCommented.png" alt="" style=''>
+							<p style='font-size: 40%'>Sentiment difference scores had a mean of <b>-0.014</b>, indicating that check-out logs had slightly more negative setniment in average, compared to logs during check-in. </p>
+						</div>
+						<div class="double" style='height: 35vh'>
+							<p style='font-size: 40%'><b>Student Setniments and Mentor Input:</b> Student logs that were accompanied with mentor comments (n = 4829) had a more positive average sentiment differnece (-0.009) compared to the sample average. <br> <br> Sentiment extracted from mentor comments seemed to to align with student sentiment differences from respective days; positive student sentiment differences were followed by positive mentor sentiments.</p>
+							<img src="figures/Mentor-Sent-Diff.png" alt="" style=''>
+						</div>
+					</section>
+
+					<section class="single">
+						<div>
+							<h4>Sentiments and Hours Worked</h4>
+							<img src="figures/Sentiment-Diff-By-Hours.png" alt="">
+							<p class='subtext'>The average sentiment difference was most positive in work days that were between 3 to 5 hours in length, with an average difference of -0.0125. This range also had the most logs, including the only hourly bins larger than 10,000 logs (n = 11,359 and 15,385 for 3 and 4 hours respectively). This implies that a strong portion of internships have work hours that maximize the student experience. On the other hand, a full-time working day, 8 hours, had the most negative sentiment differnece average.<b></b> </p>
+						</div>
+					</section>
+
+					<section class='single'>
+						<h4>Sentiment Differences Across Fields</h4>
+						<div class="">
+							<img src="figures/top14.png" alt="" style='height: 70vh'>
+							<p class='subtext' style='margin-top: -10vh'> <b>Above were the fields with the 7 highest and lowest average sentiment differneces.</b> <br>Logistics-related industries such as insurance, finance, real estate, and legal, had the highest average sentiment difference, where as the negative-most end included art-related industries such as performing arts and culinary. </p>
+						</div>
+					</section>
+
+
+			</section>
+			<section><h3 style=''>Potential next steps to utilize what was uncovered</h3></section>
+			<section>
+				<section>
+				<h3 style=''>Appendix</h3>
+				</section>
+				<section>
+					<h6>Sentiment Analysis Methodology</h6>
+					<p style='font-size: 50%; text-align: left; color:#ccc'>
+
+Two main techniques were utilized to ensure that we are getting the accurate values for the sentiment score associated with a piece of literature. The first technique involves the cleaning the data to only include valid check-in and checkout comments. Various NLP techniques such as lemmatizing are used to filter out strings that usually give inaccurate sentiment values such a string with only 2 or 3 words in them. After performing the different filtering techniques, the initial dataset was reduced from roughly 200K logs to around 60,000 records, approximately 30% of the starting dataset. <br> <br>
+
+The second technique that was used was calculating the sentiment value for a piece of string using three different methods and averaging their results. The first method is to get sentiment value from the TextBlob NLP library, whose sentiment analysis tools are based off the Pattern library, which focuses on adjectives and was trained on customer review from popular online shopping platforms. The second method uses NTLK library’s Naïve Bayes Classifier which is a machine learning model trained on a large corpus of movie reviews. Finally, the last method utilizes VADER (Valence Aware Dictionary and Sentiment Reasoner) library which was trained on comments scrapped from various social media platforms. The average sentiment from these methods is normalized to map the value from 0.0 (most negative) to 1.0 (most positive).  </p>
+				</section>
+
+			</section>
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
